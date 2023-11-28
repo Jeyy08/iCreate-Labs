@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iCreate Labs</title>
+    <link rel="stylesheet" href="asssets/style/aos.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" integrity="sha512-Atu8sttM7mNNMon28+GHxLdz4Xo2APm1WVHwiLW9gW4bmHpHc/E2IbXrj98SmefTmbqbUTOztKl5PDPiu0LD/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header class="bg-white ">
         <nav x-data="{ isOpen: false }"  class="border-b dark:border-gray-700">
-            <div class="container px-6 py-6 mx-auto lg:flex lg:justify-between lg:items-center">
+            <div class="container px-6 py-1 mx-auto lg:flex lg:justify-between lg:items-center">
             
                 <div class="flex items-center justify-between">
                     <a href="#">
-                        <img style="width: 100px;" src="asssets/images/Logo.png" alt="">
+                        <img style="width:80px;" src="asssets/images/logo.png" alt="">
                     </a>
     
                     <!-- Mobile menu button -->
@@ -36,13 +37,13 @@
                 </div>
     
                 <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-                <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+                <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
                     <div class="flex flex-col space-y-8 lg:flex-row lg:items-center lg:space-y-0 lg:-px-8">
-                        <a class="block font-medium text-gray-900 hover:pb-2 lg:mx-8 hover:text-red-400  hover:border-b" href="#">About Us</a>
-                        <a class="block font-medium text-gray-900 hover:pb-2  lg:mx-8 hover:text-red-400  hover:border-b" href="#">How it works!</a>
-                        <a class="block font-medium text-gray-900 hover:pb-2 lg:mx-8 hover:text-red-400  hover:border-b-red" href="#">Contact</a>
+                        <a class="block font-medium text-gray-900 lg:mx-8 hover:text-red-400 " href="#">About Us</a>
+                        <a class="block font-medium text-gray-900  lg:mx-8 hover:text-red-400 " href="#">How it works!</a>
+                        <a class="block font-medium text-gray-900 lg:mx-8 hover:text-red-400 " href="#">Contact</a>
     
-                        <button class="flex items-center justify-center px-5 py-2 text-sm font-medium tracking-wide text-center text-white capitalize transition-colors duration-300 transform bg-gray-700 rounded-lg hover:bg-red-400 focus:outline-none focus:bg-gray-600">
+                        <button class="flex items-center justify-center px-5 py-2 text-sm font-medium tracking-wide text-center text-white capitalize transition-colors duration-300 transform bg-blue-700 rounded-lg hover:bg-red-400 focus:outline-none focus:bg-gray-600">
                           Register
                         </button>
                     </div>
@@ -52,27 +53,88 @@
     
         <div class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
             <div class="w-full lg:w-1/2">
-                <div class="lg:max-w-lg">
-                      <h1 style="font-size: 32px;" class="text-gray-700 "><b> Empowering Cybersecurity Innovators and Tech Enthusiast. <br> A Hub for Secure Futures in IT Ecosystem.</b></h1>
+                <div data-aos="fade-left" class="lg:max-w-lg">
+                      <h1 style="font-size: 32px;" class="text-blue-700 "><b> Empowering Cybersecurity Innovators and Tech Enthusiast. <br> A Hub for Secure Futures in IT Ecosystem.</b></h1>
                 </div>
             </div>
     
-            <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
+            <div data-aos="fade-right" class="flex items-center justify-center w-full h-96 lg:w-1/2">
                 <a href="https://storyset.com/internet"></a>
-                <img class="object-cover w-full h-full max-w-2xl rounded-md" src="asssets/images/cyber-attack-animate.svg" alt="glasses photo">
+                <img class="object-cover w-full h-full max-w-2xl rounded-md" src="asssets/images/data-extraction-animate.svg" alt="glasses photo">
             </div>
         </div>
     </header>
-    <!-- our services -->
-    <section style="background-color: #ff704d;">
-        <div class="container px-6 py-10 mx-auto">
-            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Our Services</h1>
+    <!-- Services -->
+	<div>
+		<div class="md:mx-20 mx-5">
+			<section class="my-7 font-raleway">
+				<div class="md:grid grid-cols-3 items-center gap-x-4">
+                    <div class="col-span-2 bg-red-200 rounded-lg px-4 py-4" data-aos="fade-right">
+						<div class="md:grid grid-cols-3 gap-4 md:space-y-0 space-y-3">
+							<div class="bg-bg px-2 py-2 rounded-md text-center" data-aos="fade-left">
+								<img src="asssets/images/cyber-attack-animate.svg" alt="">
+								<button type="button" class="px-6 py-2.5 my-3 bg-red-400 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-gray-100 hover:text-red-400  hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="We offer a mix of creativity, work spaces at zero cost for young tech entrepreneurs and innovators with viable ideas">
+									Cyber Security
+								</button>
+							</div>
+							<div class="bg-bg px-2 py-2 rounded-md text-center" data-aos="fade-up">
+								<img src="asssets/images/software-code-testing-animate.svg" alt="">
+								<button type="button" class="px-6 py-2.5 my-3 bg-red-400 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-gray-100 hover:text-red-400  hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="You have an idea and you have resources to develop it, we can manage the process of development for you.">
+									Software Development
+								</button>
+							</div>
+							<div class="bg-bg px-2 py-2 rounded-md text-center" data-aos="fade-down">
+								<img src="asssets/images/endpoint-animate.svg" alt="">
+								<button type="button" class="px-6 py-2.5 my-3 bg-red-400 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-gray-100 hover:text-red-400  hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="We have in house mentors and external individuals with a strong background that contribute to providing mentorship to startups and young innovation that are members of our community.">
+									Web Development
+								</button>
+							</div>
+							<div class="bg-bg px-2 py-2 rounded-md text-center" data-aos="fade-right">
+								<img src="asssets/images/online-learning-animate.svg" alt="">
+								<button type="button" class="px-6 py-2.5 my-3 bg-red-400 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-gray-100 hover:text-red-400  hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="We offer a maker space where young innovators can create things a place for hand on learning with all tool for creativity offering 3D printing, VR, Robotics and IOT.">
+									Internship Programme
+								</button>
+							</div>
+							<div class="bg-bg px-2 py-2 rounded-md text-center" data-aos="zoom-in">
+								<img src="asssets/images/webinar-animate.svg" alt="">
+								<button type="button" class="px-6 py-2.5 my-3 bg-red-400 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-gray-100 hover:text-red-400  hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="We have in house STEM experts who deliver the pedagogy and emphasize on bridging the learning gap by putting children at the core of experience, making them active learners other than passive listeners.">
+									Mentorship
+								</button>
+							</div>
+							<div class="bg-bg px-2 py-2 rounded-md text-center" data-aos="fade-up">
+								<img src="asssets/images/instruction-manual-animate.svg" alt="">
+								<button type="button" class="px-6 py-2.5 my-3 bg-red-400 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-gray-100 hover:text-red-400  hover:shadow-lg active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Our participants are set to gain practical hands on skills and knowledge. Which can be immediately applied to both their professional workplace as well as towards their personal career development">
+									Courses
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="space-y-5" data-aos="fade-left">
+						<div class=" justify-center my-3">
+                            <h1 class="text-2xl font-semibold text-blue-700 capitalize lg:text-3xl ">Our Services</h1>
     
-            <div class="mt-2">
-                <span class="inline-block w-40 h-1 bg-red-200 rounded-full"></span>
-                <span class="inline-block w-3 h-1 ml-1 bg-red-200 rounded-full"></span>
-                <span class="inline-block w-1 h-1 ml-1 bg-red-200 rounded-full"></span>
-            </div>
+                            <div class="mt-2">
+                                <span class="inline-block w-40 h-1 bg-red-200 rounded-full"></span>
+                                <span class="inline-block w-3 h-1 ml-1 bg-red-200 rounded-full"></span>
+                                <span class="inline-block w-1 h-1 ml-1 bg-red-200 rounded-full"></span>
+                            </div>
+						</div>
+						<div class="space-y-5">
+							<p class="md:text-xl text-lg font-bold text-center capitalize font-varela leading-relaxed text-secondary">
+								We are a company focused in creating an enabling environment for most startups
+							</p>
+							<p class="md:text-base text-sm leading-loose text-center">
+								At iCreateLab, we are more than just a company; we are the architects of an ecosystem designed to fuel tech innovation and cybersecurity. Our mission is to create an enabling environment for startups, providing the necessary tools and support to usher in a new era of technological advancement.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+    <!-- our services -->
+    <!-- <section style="background-color: #ff704d;">
+        <div class="container px-6 py-10 mx-auto">
     
             <div class="mt-8 xl:mt-12 lg:flex lg:items-center">
                 <div class="grid w-full grid-cols-1 gap-8 lg:w-1/2 xl:gap-16 md:grid-cols-2">
@@ -135,28 +197,33 @@
                 </div>
     
                 <div class="hidden lg:flex lg:w-1/2 lg:justify-center">
-                    <img class="w-[28rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                    <img class="w-[28rem] h-[28rem] flex-shrink-0 object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="asssets/images/software-code-testing-animate.svg" alt="">
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- about us -->
     <section class="bg-white">
         <div class="container px-6 py-10 mx-auto">
             <div class="lg:-mx-6 lg:flex lg:items-center">
-                <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                <img data-aos="fade-left" class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="asssets/images/endpoint-animate.svg" alt="">
     
-                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                <div data-aos="fade-right" class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
                     <p class="text-5xl font-semibold text-red-400 ">“</p>
     
-                    <h1 class="text-2xl font-semibold text-gray-80 lg:text-3xl lg:w-96">
-                        About Us
+                    <h1 class="text-2xl font-semibold text-blue-700 lg:text-3xl lg:w-96">
+                        About iCreateLab
                     </h1>
     
                     <p class="max-w-lg mt-6 text-gray-500 ">
-                        “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
-                        tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
-                        aperiam dolorum, obcaecati corrupti aspernatur a. ”
+                        “ 
+
+                        Empowering Innovation, Fostering Growth
+                        
+                        Welcome to iCreateLab, an ecosystem meticulously crafted to empower ICT-focused tech entrepreneurs and young individuals through the integration of STEM pedagogy. At iCreateLab, we believe in the transformative power of technology and innovation as catalysts for positive change.
+                        At the core of iCreateLab's mission is the vision of fostering an environment where innovative minds can thrive and create impactful solutions. We are dedicated to building a framework that enables the development of groundbreaking solutions, enterprises, and companies to address society's most pressing challenges.
+                            iCreateLab is more than just a company; we are architects of an innovation ecosystem. Our focus is on providing a nurturing environment for startups, where creativity meets technology, and ideas evolve into tangible solutions. We understand the unique challenges faced by tech entrepreneurs, and our ecosystem is designed to provide comprehensive support.
+                        STEMLAB, the genesis of iCreateLab, was established with a grand vision—to empower, promote, and position Africa, particularly Nigeria, at the forefront of technology and the startup ecosystem. Our vision extends beyond business; it's a commitment to leveraging technology as a strategic tool to combat unemployment and drive sustainable development”
                     </p>
     
                     <a  href="#aboutus" class="flex mt-2 items-center -mx-1 text-sm text-gray-600 capitalize transition-colors duration-300 transform hover:underline hover:text-red-400">
@@ -167,5 +234,135 @@
             </div>
         </div>
     </section>
+    <section style="background-color: #ff704d;">
+        <div class="container px-6 py-8 mx-auto">
+            <h2 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our <span class="text-blue-700"> Team</span></h2>
+    
+            <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div data-aos="fade-left" class="w-full max-w-xs text-center">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80" alt="avatar" />
+    
+                    <div class="mt-2">
+                        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Ahmed Omer</h3>
+                        <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">CEO</span>
+                    </div>
+                </div>
+    
+                <div data-aos="fade-down" class="w-full max-w-xs text-center">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="avatar" />
+    
+                    <div class="mt-2">
+                        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Jane Doe</h3>
+                        <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Co-founder</span>
+                    </div>
+                </div>
+    
+                <div data-aos="fade-up" class="w-full max-w-xs text-center">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80" alt="avatar" />
+    
+                    <div class="mt-2">
+                        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Steve Ben</h3>
+                        <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">UI/UX</span>
+                    </div>
+                </div>
+    
+                <div data-aos="fade-right" class="w-full max-w-xs text-center">
+                    <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="avatar" />
+    
+                    <div class="mt-2">
+                        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Patterson Johnson</h3>
+                        <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Software Engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- how it works -->
+
+    <section class="bg-white">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="text-center">
+                <h1 class="text-2xl font-semibold mb-5 text-red-400 capitalize lg:text-3xl ">How It Works</h1>
+            </div>
+            <div class="lg:flex lg:-mx-6">
+                <div class="lg:w-3/4 lg:px-6">
+                    <img data-aos="fade-left" class="object-cover object-center w-full h-80 xl:h-[30rem] rounded-xl" src="asssets/images/instruction-manual-animate.svg" alt="">
+    
+                    <div>
+                        <p class="mt-6 text-sm text-red-400 uppercase">Want to know</p>
+    
+                        <h1 class="max-w-lg mt-4 text-2xl font-semibold leading-tight text-gray-800 dark:text-white">
+                            What do you want to know about UI
+                        </h1>
+    
+                        <div data-aos="zoom-in" class="flex items-center mt-6">
+                            <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+    
+                            <div class="mx-4">
+                                <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div data-aos="zoom-in" class="mt-8 lg:w-1/4 lg:mt-0 lg:px-6">
+                    <div>
+                        <h3 class="text-red-400 capitalize">Design instument</h3>
+    
+                        <a href="#" class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                            How to raise $100k+ by using blox ui kit on your design
+                        </a>
+                    </div>
+    
+                    <hr class="my-6 border-gray-200 dark:border-gray-700">
+    
+                    <div>
+                        <h3 class="text-red-400 capitalize">UI Resource</h3>
+    
+                        <a href="#" class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                            Should you creat UI Product by using Blox?
+                        </a>
+                    </div>
+    
+                    <hr class="my-6 border-gray-200 dark:border-gray-700">
+    
+                    <div>
+                        <h3 class="text-red-400 capitalize">Premium Collection</h3>
+    
+                        <a href="#" class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                            Top 10 Blocks you can get on Blox's collection.
+                        </a>
+                    </div>
+    
+                    <hr class="my-6 border-gray-200 dark:border-gray-700">
+    
+                    <div>
+                        <h3 class="text-red-400 capitalize">Premium kits</h3>
+    
+                        <a href="#" class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                            Top 10 Ui kit you can get on Blox's collection.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script>
+
+        window.addEventListener('load', () => {
+            AOS.init({
+              duration: 1000,
+              easing: 'ease-in-out',
+              once: true,
+              mirror: false
+            })
+          });
+       
+
+	</script>
+    <script src="asssets/js/aos.js"></script>
 </body>
 </html>
