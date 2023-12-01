@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" integrity="sha512-Atu8sttM7mNNMon28+GHxLdz4Xo2APm1WVHwiLW9gW4bmHpHc/E2IbXrj98SmefTmbqbUTOztKl5PDPiu0LD/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="overflow-x-hidden">
+<body class="sm:overflow-x-hidden overflow-x-hidden">
     <header class="bg-white ">
         <nav x-data="{ isOpen: false }"  class="sticky bg-white z-40">
             <div class="container px-6 py-3 mx-auto lg:flex lg:justify-between lg:items-center">
@@ -40,6 +40,7 @@
                 <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-2 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
                     <div class="flex flex-col space-y-8 lg:flex-row lg:items-center lg:space-y-0 lg:-px-8">
                         <a class="block font-medium text-gray-900 lg:mx-8 hover:text-red-400 " href="#">About Us</a>
+                        <a class="block font-medium text-gray-900 lg:mx-8 hover:text-red-400 " href="gallery.html">Gallery</a>
                         <a class="block font-medium text-gray-900  lg:mx-8 hover:text-red-400 " href="#">How it works!</a>
                         <a class="block font-medium text-gray-900 lg:mx-8 hover:text-red-400 " href="#">Contact</a>
     
@@ -113,7 +114,7 @@
 						</div>
 					</div>
 					<div class="space-y-5" data-aos="fade-left">
-						<div class=" justify-center my-3">
+						<div class=" justify-center text-center my-3">
                             <h1 class="text-2xl font-semibold text-blue-700 capitalize lg:text-3xl ">Our Services</h1>
     
                             <div class="mt-2">
@@ -126,7 +127,7 @@
 							<p class="md:text-xl text-lg font-bold text-center capitalize font-varela leading-relaxed text-secondary">
 								We are a company focused in creating an enabling environment for most startups
 							</p>
-							<p class="md:text-base text-sm leading-loose text-center">
+							<p class="md:text-base text-sm leading-loose text-left">
 								At iCreateLab, we are more than just a company; we are the architects of an ecosystem designed to fuel tech innovation and cybersecurity. Our mission is to create an enabling environment for startups, providing the necessary tools and support to usher in a new era of technological advancement.
 							</p>
 						</div>
@@ -217,7 +218,7 @@
                 <div data-aos="fade-right" style="background-color: #ff704d;" class="mt-8 py-3 px-2 lg:w-1/2 lg:px-6 lg:mt-0">
                     <p class="text-5xl mt-3 font-semibold text-gray-100 ">“</p>
     
-                    <h1 class="text-2xl font-semibold text-blue-700 lg:text-3xl lg:w-96">
+                    <h1 class="text-2xl font-semibold text-left text-blue-700 lg:text-3xl g lg:w-96">
                         About iCreateLab
                     </h1>
     
@@ -360,6 +361,99 @@
             </div>
         </div>
     </section>
+
+    	<!-- Success Story -->
+	<div>
+		<section id="success" class="my-7 md:mx-20 mx-5">
+			<div class="flex justify-center my-3">
+				<button type="button" data-mdb-ripple="true" data-mdb-ripple-color="#ffffff" data-mdb-ripple-duration="1000ms" class="bg-red-400 font-bold md:text-base text-sm py-2 px-10 text-center text-white cursor-default uppercase opacity-90">SUCCESS
+					STORY</button>
+			</div>
+
+			<ol class="border-l-2 border-red-400 my-2">
+				<li>
+					<div class="md:flex flex-start">
+						<div class="bg-red-400 w-6 h-6 flex items-center justify-center rounded-full -ml-3">
+							<svg aria-hidden="true" focusable="false" data-prefix="fas" class="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+							</svg>
+						</div>
+						<div class="block p-6 rounded-lg shadow-lg bg-bglight md:hover:-translate-y-2 transition-all max-w-md ml-6 mb-10" data-aos="fade-left">
+							<div class="flex justify-between mb-4">
+								<a href="#!" class="font-medium text-primary2 hover:text-primary2 focus:text-primary2 duration-300 transition ease-in-out text-sm">October
+									(14th-17th)</a>
+							</div>
+							<p class="text-gray-700 mb-6">
+								Selected as top innovator over 100 selected teams by the Financial, Service Innovators
+								of Nigeria during the TechOnDemand Hackathon at Nile University of Nigeria.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="md:flex flex-start">
+						<div class="bg-red-400 w-6 h-6 flex items-center justify-center rounded-full -ml-3">
+							<svg aria-hidden="true" focusable="false" data-prefix="fas" class="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+							</svg>
+						</div>
+						<div class="block p-6 rounded-lg shadow-lg bg-bglight md:hover:-translate-y-2 transition-all max-w-md ml-6 mb-10" data-aos="fade-left">
+							<div class="flex justify-between mb-4">
+								<a href="#!" class="font-medium text-primary2 hover:text-primary2 focus:text-primary2 duration-300 transition ease-in-out text-sm">October
+									(29th – Nov 6th)</a>
+							</div>
+							<p class="text-gray-700 mb-6">
+								Selected as top innovator over 47 teams in Nigeria selected during the cyber security
+								hackhathon organized by the Central Bank of Nigeria.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="md:flex flex-start">
+						<div class="bg-red-400 w-6 h-6 flex items-center justify-center rounded-full -ml-3">
+							<svg aria-hidden="true" focusable="false" data-prefix="fas" class="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+							</svg>
+						</div>
+						<div class="block p-6 rounded-lg shadow-lg bg-bglight md:hover:-translate-y-2 transition-all max-w-md ml-6 mb-10" data-aos="fade-left">
+							<div class="flex justify-between mb-4">
+								<a href="#!" class="font-medium text-primary2 hover:text-primary2 focus:text-primary2 duration-300 transition ease-in-out text-sm">November
+									(1st – 8th)</a>
+							</div>
+							<p class="text-gray-700 mb-6">
+								Selected as first position by the united office on drugs and corruption selected from
+								5000 teams from African countries to represent Nigeria during the united nations
+								convention against corruption in Egypt in December 12th – 17th.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="md:flex flex-start">
+						<div class="bg-red-400 w-6 h-6 flex items-center justify-center rounded-full -ml-3">
+							<svg aria-hidden="true" focusable="false" data-prefix="fas" class="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+							</svg>
+						</div>
+						<div class="block p-6 rounded-lg shadow-lg bg-bglight md:hover:-translate-y-2 transition-all max-w-md ml-6 mb-10" data-aos="fade-left">
+							<div class="flex justify-between mb-4">
+								<a href="#!" class="font-medium text-primary2 hover:text-primary2 focus:text-primary2 duration-300 transition ease-in-out text-sm">January
+									8th-15th, 2022 </a>
+							</div>
+							<p class="text-gray-700 mb-6">
+								The Stemlab Team Joined a guest of speakers, panelists, and participants of youths from over 50 Nations
+								across the world in a brainstorming session to discuss the Topic “The future of technology in a
+								post-pandemic digital Transformation at Sharm El Shiek, South Sinai, Egypt.
+							</p>
+						</div>
+					</div>
+				</li>
+			</ol>
+		</section>
+	</div>
+
+
     <div data-aos="zoom-in">
 		<div style="background-color: #ff704d;" class=" text-white text-center py-10 my-10 md:mx-20 mx-5 rounded-lg space-y-3">
 			<h3 class="md:text-3xl text-xl font-bold">Have any additional questions?</h3>
